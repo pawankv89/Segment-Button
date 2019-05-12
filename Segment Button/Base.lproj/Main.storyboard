@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Segment_Button" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xha-O9-r1n">
+                                <rect key="frame" x="20" y="418" width="374" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WmA-y3-JxW">
+                                        <rect key="frame" x="0.0" y="0.0" width="216.5" height="60"/>
+                                        <state key="normal" title="First Segment">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="segmentButtonTapWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="smI-pp-WmJ"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oGp-R3-Ru8">
+                                        <rect key="frame" x="186.5" y="0.0" width="1" height="60"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="1" id="5FX-zC-pdh"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="85V-YL-SCa">
+                                        <rect key="frame" x="157.5" y="0.0" width="216.5" height="60"/>
+                                        <state key="normal" title="Second Segment">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="segmentButtonTapWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LYj-GT-Yqp"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="85V-YL-SCa" secondAttribute="bottom" id="2dW-U6-VSM"/>
+                                    <constraint firstItem="oGp-R3-Ru8" firstAttribute="leading" secondItem="WmA-y3-JxW" secondAttribute="trailing" constant="-30" id="9Lh-Gg-Tlb"/>
+                                    <constraint firstItem="WmA-y3-JxW" firstAttribute="leading" secondItem="Xha-O9-r1n" secondAttribute="leading" id="A16-CF-V7b"/>
+                                    <constraint firstAttribute="bottom" secondItem="WmA-y3-JxW" secondAttribute="bottom" id="Guv-Iu-Nfx"/>
+                                    <constraint firstItem="85V-YL-SCa" firstAttribute="leading" secondItem="oGp-R3-Ru8" secondAttribute="trailing" constant="-30" id="VLx-PL-iM7"/>
+                                    <constraint firstItem="WmA-y3-JxW" firstAttribute="top" secondItem="Xha-O9-r1n" secondAttribute="top" id="ftf-pm-xZo"/>
+                                    <constraint firstAttribute="height" constant="60" id="jRG-yS-s4J"/>
+                                    <constraint firstAttribute="trailing" secondItem="85V-YL-SCa" secondAttribute="trailing" id="luU-X6-Uxe"/>
+                                    <constraint firstAttribute="bottom" secondItem="oGp-R3-Ru8" secondAttribute="bottom" id="vYb-QG-09e"/>
+                                    <constraint firstItem="85V-YL-SCa" firstAttribute="top" secondItem="Xha-O9-r1n" secondAttribute="top" id="xKK-04-MSS"/>
+                                    <constraint firstItem="oGp-R3-Ru8" firstAttribute="top" secondItem="Xha-O9-r1n" secondAttribute="top" id="xrl-YU-RbW"/>
+                                    <constraint firstItem="oGp-R3-Ru8" firstAttribute="centerX" secondItem="Xha-O9-r1n" secondAttribute="centerX" id="zU7-Jv-6sD"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Xha-O9-r1n" secondAttribute="trailing" constant="20" id="5BO-Wo-gCQ"/>
+                            <constraint firstItem="Xha-O9-r1n" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="X1c-u0-6Y6"/>
+                            <constraint firstItem="Xha-O9-r1n" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="dBT-z9-EEW"/>
+                            <constraint firstItem="Xha-O9-r1n" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="oeJ-95-40k"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="firstSegmentButton" destination="WmA-y3-JxW" id="TLC-fJ-74E"/>
+                        <outlet property="secondSegmentButton" destination="85V-YL-SCa" id="1JW-tk-C1A"/>
+                        <outlet property="segmentView" destination="Xha-O9-r1n" id="pGV-x9-hnk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="118.52678571428571"/>
+        </scene>
+    </scenes>
+</document>
